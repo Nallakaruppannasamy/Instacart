@@ -86,8 +86,8 @@ const ProductPage = () => {
         <div className="bg-white/50 rounded-2xl overflow-hidden">
           <div className="grid md:grid-cols-2 gap-0">
             {/* Left Side image */}
-            <div className="relative flex-center p-8 md:p-12 min-h-[320px] md:min-h-[480px]">
-              <img src={product.image} alt={product.name} className="max-h-[360px] w-auto object-contain" />
+            <div className="relative flex-center p-8 md:p-12 min-h-80 md:min-h-120">
+              <img src={product.image} alt={product.name} className="max-h-90 w-auto object-contain" />
 
               {/* Badges */}
               <div className="absolute top-5 left-5 flex flex-wrap gap-1.5">
@@ -152,7 +152,7 @@ const ProductPage = () => {
                   <button onClick={handleMinus} className="p-3 hover:bg-app-cream transition-colors">
                     <MinusIcon className="w-4 h-4" />
                   </button>
-                  <span className="px-5 text-sm font-semibold min-w-[40px] text-center">{displayQuantity}</span>
+                  <span className="px-5 text-sm font-semibold min-w-10 text-center">{displayQuantity}</span>
                   <button onClick={handlePlus} className="p-3 hover:bg-app-cream transition-colors">
                     <PlusIcon className="w-4 h-4" />
                   </button>
