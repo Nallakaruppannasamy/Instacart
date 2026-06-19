@@ -11,7 +11,7 @@ const CartSidebar = () => {
 
     const navigate = useNavigate();
 
-    const deliveryFee = cartTotal > 200 ? 0 : 100
+    const deliveryFee = cartTotal > 20 ? 0 : 1.99
 
     const grandTotal = cartTotal + deliveryFee;
 
