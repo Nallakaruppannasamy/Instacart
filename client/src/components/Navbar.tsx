@@ -37,7 +37,7 @@ const Navbar = () => {
 
                 <div className="w-full flex items-center justify-end gap-4 lg:gap-10">
                     {/* Nav Links - Desktop */}
-                    <div>
+                    <div className="flex items-center gap-4">
                         <Link to='/'>Home</Link>
                         <Link to='/products'>Products</Link>
                         <Link to='/deals' className="text-app-orange">Deals</Link>
